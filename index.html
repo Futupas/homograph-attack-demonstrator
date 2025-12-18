@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Homograph Attack Demonstrator</title>
     <style>
-        @import url('https://github.com/kavin808/arial.ttf/raw/refs/heads/master/arial.ttf');
+        @import url('/homograph-attack-demonstrator/arial.ttf');
         body {
             font-family: Arial, sans-serif;
             max-width: 1000px;
@@ -164,7 +164,7 @@
         let font;
 
         // Load the font file. Using a WOFF2 file for efficiency.
-        opentype.load('/arial.ttf', function(err, loadedFont) {
+        opentype.load('/homograph-attack-demonstrator/arial.ttf', function(err, loadedFont) {
             if (err) {
                 document.getElementById('loader').textContent = 'Error loading font: ' + err;
                 return;
